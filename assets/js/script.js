@@ -14,7 +14,7 @@ const button = document.querySelector("#buttonPass");
 
 const test = document.querySelector("#errorNamee")
 
-// Fonction pour l'input : Nom
+// Fonction sur au click du bouton
 
 button.addEventListener("click", function () {
     if (regexFirstName.test(firstName.value) == true) {
@@ -22,24 +22,12 @@ button.addEventListener("click", function () {
     } else {
          msgErrorName.setAttribute("class", "error");
          msgErrorName.textContent = "Erreur saisie ! Ex : Dupont";
-    }
-})
-
-// Fonction pour l'input : Age
-
-button.addEventListener("click", function () {
-    if (regexAge.test(age.value) == true) {
+    } if (regexAge.test(age.value) == true) {
         msgErrorAge.textContent = "";
     } else {
         msgErrorAge.setAttribute("class", "error");
         msgErrorAge.textContent = "Erreur saisie, veuillez saisir des chiffres";
-    }
-})
-
-// Fonction pour l'input : Mail
-
-button.addEventListener("click", function () {
-    if (regexFirstName.test(mail.value) == true) {
+    } if (regexFirstName.test(mail.value) == true) {
         msgErrorMail.textContent = "";
     } else {
         msgErrorMail.setAttribute("class", "error");
